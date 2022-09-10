@@ -43,5 +43,5 @@ async def on_message(message):
     if any (w in msg for w in salute):
         await message.channel.send(random.choice(salute_anwser))
 
-token = 'MTAxNzU2NzYwNjU5NDYwMTAyMQ.GFEbS8.QIXYwJ_-KW_cgK3s2WPHKinxpiQq0i3FV_H35k'
+token = '' #token goes here
 client.run(token)
