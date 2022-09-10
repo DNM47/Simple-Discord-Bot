@@ -36,11 +36,11 @@ async def on_message(message):
         return
     msg = message.content
 
-    if msg.startswith('$bb'):
+    if msg.startswith('!bb'):
         quote = get_quote()
         await message.channel.send(quote)
 
-    if any (w in msg for w in salute):
+    if any (w in msg.lower() for w in salute):
         await message.channel.send(random.choice(salute_anwser))
 
 token = '' #token goes here
